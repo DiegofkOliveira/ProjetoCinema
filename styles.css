@@ -1,0 +1,655 @@
+body {
+    background-color: #0000cc;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.container_titulo {
+    display: flex;
+    width: auto;
+    gap: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container_titulo_music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.container_titulo_objeto {
+    margin-right: 20px;
+}
+
+.container_titulo_informacoes{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_titulo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+
+.container_titulo_imagem {
+    width: 150px;
+    height: 150px;
+}
+
+.container_navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px 0 30px;
+    border-radius: 20px;
+}
+
+.container_navegacao_botao {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.container_navegacao_home,
+.container_navegacao_emcartaz,
+.container_navegacao_embreve,
+.container_navegacao_descontos,
+.container_navegacao_contato {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_navegacao_home:hover,
+.container_navegacao_emcartaz:hover,
+.container_navegacao_embreve:hover,
+.container_navegacao_descontos:hover,
+.container_navegacao_contato:hover {
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
+    color: #7cfc00;
+}
+
+.container_navegacao_home:hover .fa-home,
+.container_navegacao_emcartaz:hover .fa-video,
+.container_navegacao_embreve:hover .fa-film,
+.container_navegacao_descontos:hover .fa-tag,
+.container_navegacao_contato:hover .fa-user {
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
+    color: #7cfc00;
+}
+
+.container_texto {
+    width: auto;
+    height: auto;
+    margin: 30px 10px 10px 20px;
+    border-radius: 50px;
+}
+
+.container_texto_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.container_texto_menu::before {
+    content: '';
+    position: absolute;
+    top: 280px;
+    width: 1600px;
+    height: 450px;
+    background-image: url(Imagem/novayork.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+
+.container_texto_imagem {
+    width: 500px;
+    height: 500px;
+}
+
+.container_texto_titulo {
+    width: auto;
+    height: auto;
+}
+
+.container_texto_tituloPrincipal {
+    width: 500px;
+    color: white;
+    font-size: 60px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_texto_tituloAlterado {
+    color: #33ccff;
+}
+
+.container_texto_tituloAlterado:hover {
+    filter: drop-shadow(6px 6px 6px rgb(255, 255, 255));
+}
+
+.container_texto_textoSegundario {
+    width: 800px;
+    color: white;
+    font-size: 30px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+}
+
+.container_emcartaz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: black;
+}
+
+.container_emcartaz_titulo{
+    width: 300px;
+    color: white;
+    font-size: 25px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_emcartaz_titulo:hover{
+    filter: drop-shadow(6px 6px 6px rgb(255, 255, 255));
+}
+
+.container_emcartaz_lista{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 50px 30px;
+}
+
+.container_emcartaz_filme{
+    width: 280px;
+    height: 380px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.container_emcartaz_primeiro,
+.container_emcartaz_segundo,
+.container_emcartaz_terceiro,
+.container_emcartaz_quarto,
+.container_emcartaz_quinto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #7cfc00;
+}
+
+.container_emcartaz_primeiro:hover,
+.container_emcartaz_segundo:hover,
+.container_emcartaz_terceiro:hover,
+.container_emcartaz_quarto:hover,
+.container_emcartaz_quinto:hover{
+    filter: drop-shadow(8px 8px 6px rgb(255, 255, 255));
+    background-color: #00ffff;
+    cursor: pointer;
+}
+
+.container_emcartaz_wonka,
+.container_emcartaz_aquaman,
+.container_emcartaz_wish,
+.container_emcartaz_madame,
+.container_emcartaz_animais{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0 20px 0;
+}
+
+.container_emcartaz_wonkasinopse,
+.container_emcartaz_aquamansinopse,
+.container_emcartaz_wishsinopse,
+.container_emcartaz_madamesinopse{
+    width: 300px;
+    height: auto;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid #0000cc;
+    margin: 40px 0 5px 0;
+}
+
+.container_emcartaz_animaissinopse{
+    width: 300px;
+    height: auto;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid #0000cc;
+    margin: 10px 0 5px 0;
+}
+
+.container_emcartaz_wonkaidade,
+.container_emcartaz_aquamanidade,
+.container_emcartaz_animaisidade,
+.container_emcartaz_wishidade,
+.container_emcartaz_madameidade{
+    display: flex;
+    justify-content: start;
+    height: auto;
+    color: black;
+    font-size: 14px;
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 10px;
+}
+
+.container_emcartaz_wonkatexto,
+.container_emcartaz_aquamantexto,
+.container_emcartaz_animaistexto,
+.container_emcartaz_wishtexto,
+.container_emcartaz_madametexto{
+    width: auto;
+    height: auto;
+    color: black;
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 30px 20px;
+}
+
+.container_embreve{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: black;
+    margin: 50px 0 0 0;
+}
+
+.container_embreve_titulo{
+    width: 300px;
+    color: white;
+    font-size: 25px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_embreve_titulo:hover{
+    filter: drop-shadow(6px 6px 6px rgb(255, 255, 255));
+}
+
+.container_embreve_lista{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 50px 30px;
+}
+
+.container_embreve_filme{
+    width: 280px;
+    height: 380px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.container_embreve_primeiro,
+.container_embreve_segundo,
+.container_embreve_terceiro,
+.container_embreve_quarto,
+.container_embreve_quinto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #6633cc;
+}
+
+.container_embreve_primeiro:hover,
+.container_embreve_segundo:hover,
+.container_embreve_terceiro:hover,
+.container_embreve_quarto:hover,
+.container_embreve_quinto:hover{
+    filter: drop-shadow(8px 8px 6px rgb(255, 255, 255));
+    background-color: #00ffff;
+    cursor: pointer;
+}
+
+.container_embreve_kung,
+.container_embreve_ferrari,
+.container_embreve_bob,
+.container_embreve_divertida,
+.container_embreve_planeta{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0 20px 0;
+}
+
+.container_embreve_kungsinopse,
+.container_embreve_ferrarisinopse,
+.container_embreve_bobsinopse,
+.container_embreve_divertidasinopse,
+.container_embreve_planetasinopse{
+    width: 300px;
+    height: auto;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid #0000cc;
+    margin: 40px 0 5px 0;
+}
+
+.container_embreve_kungidade,
+.container_embreve_ferrariidade,
+.container_embreve_bobidade,
+.container_embreve_divertidaidade,
+.container_embreve_planetaidade{
+    display: flex;
+    justify-content: start;
+    height: auto;
+    color: black;
+    font-size: 14px;
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 10px;
+}
+
+.container_embreve_kungtexto,
+.container_embreve_ferraritexto,
+.container_embreve_bobtexto,
+.container_embreve_divertidatexto,
+.container_embreve_planetatexto{
+    width: auto;
+    height: auto;
+    color: black;
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 30px 20px;
+}
+
+.container_desconto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 50px 0 0 0;
+}
+
+.container_desconto_menu{
+    width: 300px;
+    color: white;
+    font-size: 25px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_desconto_menu:hover{
+    filter: drop-shadow(6px 6px 6px rgb(0,0,0,0.5));
+}
+
+.container_desconto_topicos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 200px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.container_desconto_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.container_desconto_icon{
+    font-size: 80px;
+    color: white;
+    margin: 30px;
+    fill: currentColor;
+}
+
+.container_desconto_icon:hover{
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+
+.container_desconto_gestante,
+.container_desconto_estudante,
+.container_desconto_deficiente{
+    color: white;
+    font-size: 28px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_desconto_texto{
+    color: white;
+    width: 350px;
+    margin: 30px 0;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 50px 0 0 0;
+    background-image: linear-gradient(to right, #ff00ff 0%, #6633cc 100%);
+}
+
+.container_contato_titulo{
+    width: 300px;
+    color: white;
+    font-size: 25px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_contato_redes{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 20px 100px 80px 100px;
+}
+
+.container_contato_nome{
+    width: 500px;
+    color: white;
+    font-size: 30px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid white;
+}
+
+.container_contato_nomeredes{
+    width: auto;
+    height: auto;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-threads,
+.fa-x-twitter{
+    font-size: 35px;
+    color: white;
+    margin: 30px 40px 0 0 ;
+}
+
+.fa-facebook-f:hover,
+.fa-instagram:hover,
+.fa-threads:hover,
+.fa-x-twitter:hover{
+    filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+
+.container_contato_localizacao{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.container_contato_titulolocalizacao{
+    width: auto;
+    height: auto;
+}
+
+.container_contato_textolocalizacao{
+    width: 500px;
+    color: white;
+    font-size: 30px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid white;
+}
+
+.fa-location-dot{
+    font-size: 40px;
+    color: white;
+    margin: 0 10px 0 0;
+}
+
+.container_contato_texto{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: top;
+}
+
+.container_contato_local{
+    color: white;
+    font-size: 22px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_contato_endereço{
+    color: white;
+    font-size: 22px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container_contato_email{
+    width: auto;
+    height: auto;
+}
+
+.container_contato-tituloemail{
+    width: 500px;
+    color: white;
+    font-size: 30px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid white;
+}
+
+.container_contato_textoemail{
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-envelope,
+.fa-whatsapp,
+.fa-phone{
+    font-size: 40px;
+    color: white;
+    margin: 0 10px 0 0;
+}
+
+.container_contato_emailendereco{
+    color: white;
+    font-size: 22px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

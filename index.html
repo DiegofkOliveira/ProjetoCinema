@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+  <div id="container_titulo" class="container_titulo">
+    <img class="container_titulo_imagem" src="./Imagem/Cinema.png" alt="Logo">
+    <div class="container_titulo_informacoes" id="informacoes">
+      <p id="localização"></p>
+      <p id="data-hora"></p>
+    </div>
+    <div class="container_titulo_music">
+      <audio class="container_titulo_objeto" controls autoplay loop>
+        <source src="" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <div class="container_navegacao">
+    <ul class="container_navegacao_botao">
+      <a class="container_navegacao_home" href="#container_titulo"><i class="fas fa-home"></i>Home</a>
+    </ul>
+    <ul class="container_navegacao_botao">
+      <a class="container_navegacao_emcartaz" href="#container_emcartaz"><i class="fas fa-video"></i>Em cartaz</a>
+    </ul>
+    <ul class="container_navegacao_botao">
+      <a class="container_navegacao_embreve" href="#container_embreve"><i class="fas fa-film"></i>Em breve</a>
+    </ul>
+    <ul class="container_navegacao_botao">
+      <a class="container_navegacao_descontos" href="#container_desconto"><i class="fas fa-tag"></i>Descontos</a>
+    </ul>
+    <ul class="container_navegacao_botao">
+      <a class="container_navegacao_contato" href="#container_contato"><i class="fas fa-phone"></i>Contato</a>
+    </ul>
+  </div>
+  <div class="container_texto">
+    <div class="container_texto_menu">
+      <img class="container_texto_imagem" src="Imagem/Cinema.png" alt="Cinema">
+      <div class="container_texto_titulo">
+        <h1 class="container_texto_tituloPrincipal">Cinema
+          <span class="container_texto_tituloAlterado">3D e 2D.</span>
+          <h1>
+            <p class="container_texto_textoSegundario">"É curioso como as cores do mundo
+              real parecem muito mais reais quando vistas no cinema."</p>
+      </div>
+    </div>
+  </div>
+  <div id="container_emcartaz" class="container_emcartaz">
+    <div class="container_emcartaz_titulo">
+      <h1 class="container_emcartaz_texto">Em Cartaz</h1>
+    </div>
+    <div class="container_emcartaz_lista">
+      <div class="container_emcartaz_primeiro">
+        <img class="container_emcartaz_filme" src="Imagem/filme1.jpg" alt="Filme1">
+        <h1 class="container_emcartaz_wonka">Wonka</h1>
+        <h2 class="container_emcartaz_wonkasinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #4682b4;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">10</strong>
+        </span>
+        <p class="container_emcartaz_wonkatexto">
+          Wonka é uma comédia musical baseada no clássico livro A Fantástica Fábrica de Chocolate,
+          do autor britânico Roald Dahl. O filme mostra as origens da história do jovem Willy Wonka
+          (interpretado por Timothée Chalamet), que apareceu nos cinemas pela primeira vez na produção
+          de 1971 e, mais tarde, ganhou um remake ...</p>
+      </div>
+      <div class="container_emcartaz_segundo">
+        <img class="container_emcartaz_filme" src="Imagem/filme2.jpg" alt="Filme2">
+        <h1 class="container_emcartaz_aquaman">Aquaman 2: O reino perdido</h1>
+        <h2 class="container_emcartaz_aquamansinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #4682b4;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">10</strong>
+        </span>
+        <p class="container_emcartaz_aquamantexto">
+          Aquaman 2 é a sequência do filme Aquaman de 2018,
+          que acompanha Arthur Curry (Jason Momoa), o filho do humano Tom Curry (Temuera Morrison)
+          com a atlante Atlanna (Nicole Kidman). Ele cresce com a vivência de um humano e as capacidades
+          metahumanas de um atlante...</p>
+      </div>
+      <div class="container_emcartaz_terceiro">
+        <img class="container_emcartaz_filme" src="Imagem/filme3.png" alt="Filme3">
+        <h1 class="container_emcartaz_animais">Animais Fantásticos: Os segredos de Dumbledore</h1>
+        <h2 class="container_emcartaz_animaissinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #4682b4;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">10</strong>
+        </span>
+        <p class="container_emcartaz_animaistexto">
+          Animais Fantásticos: Os Segredos de Dumbledore é a sequência das aventuras de Newt Scamander
+          (Eddie Redmayne), um magizoologista que carrega em sua maleta uma coleção de fantásticos ]
+          animais do mundo da magia descoberta em suas viagens. Dessa vez, ele é convocado...</p>
+      </div>
+      <div class="container_emcartaz_quarto">
+        <img class="container_emcartaz_filme" src="Imagem/filme4.webp" alt="Filme4">
+        <h1 class="container_emcartaz_wish">Wish: O poder dos desejos</h1>
+        <h2 class="container_emcartaz_wishsinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #006400;"></i>
+          <strong class="fa-stack-1x fa-inverse">L</strong>
+        </span>
+        <p class="container_emcartaz_wishtexto">
+          "Como surgiu a estrela dos desejos, sobre a qual tantos personagens desejavam?".
+          Essa é a história de Asha (Ariana DeBose), de dezessete anos, uma jovem otimista,
+          com uma inteligência afiada que se preocupa infinitamente com sua comunidade.
+          Em um momento de desespero...</p>
+      </div>
+      <div class="container_emcartaz_quinto">
+        <img class="container_emcartaz_filme" src="Imagem/filme5.webp" alt="Filme5">
+        <h1 class="container_emcartaz_madame">Madame Teia</h1>
+        <h2 class="container_emcartaz_madamesinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #d2691e;"></i>
+          <strong class="fa-stack-1x fa-inverse">14</strong>
+        </span>
+        <p class="container_emcartaz_madametexto">
+          Madame Teia mostra a história de origem da personagem-título, interpretada por Dakota Johnson.
+          Na trama, Cassandra Webb leva uma vida comum trabalhando como paramédica em Manhattan -
+          até que, um dia, ela descobre que possui a habilidade de prever o futuro...</p>
+      </div>
+    </div>
+  </div>
+  <div id="container_embreve" class="container_embreve">
+    <div class="container_embreve_titulo">
+      <h1 class="container_embreve_texto">Em Breve</h1>
+    </div>
+    <div class="container_embreve_lista">
+      <div class="container_embreve_primeiro">
+        <img class="container_embreve_filme" src="Imagem/filme10.webp" alt="Filme1">
+        <h1 class="container_embreve_kung">Kung Fu Panda 4</h1>
+        <h2 class="container_embreve_kungsinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #006400;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">L</strong>
+        </span>
+        <p class="container_embreve_kungtexto">
+          Kung Fu Panda 4: Dessa vez, o Dragão Guerreiro foi convocado para dar sequência em sua jornada e
+          assim tornar-se o Líder Espiritual do Vale da Paz. Para que isso aconteça, porém, ele precisa
+          encontrar e treinar alguém para ficar em seu lugar. Para deixar o amado urso ainda mais
+          enlouquecido, tem vilão novo e poderoso no pedaço.</p>
+      </div>
+      <div class="container_embreve_segundo">
+        <img class="container_embreve_filme" src="Imagem/filme12.webp" alt="Filme1">
+        <h1 class="container_embreve_ferrari">Ferrari</h1>
+        <h2 class="container_embreve_ferrarisinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: red;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">16</strong>
+        </span>
+        <p class="container_embreve_ferraritexto">
+          Ferrari: Durante o verão de 1957, a falência paira sobre a empresa que Enzo Ferrari e sua
+          esposa Laura construíram dez anos antes. Ele decide apostar tudo na icônica Mille Miglia,
+          uma corrida automobilística de longa distância pela Itália. No processo, Enzo redefiniu a
+          ideia do carro esportivo italiano de alto desempenho e deu origem ao conceito da Fórmula 1.</p>
+      </div>
+      <div class="container_embreve_terceiro">
+        <img class="container_embreve_filme" src="Imagem/filme6.jpg" alt="Filme1">
+        <h1 class="container_embreve_bob">Bob Marley: One Love</h1>
+        <h2 class="container_embreve_bobsinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: red;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">16</strong>
+        </span>
+        <p class="container_embreve_bobtexto">
+          Bob Marley: One Love é um filme biográfico dirigido por Reinaldo Marcus Green
+          (King Richard: Criando Campeãs) que conta a história de Robert Nesta Marley OM,
+          mais conhecido como Bob Marley, grande ícone do reggae. O filme relembra os importantes feitos do
+          cantor para seu país, assim como as dificuldades que sua família e conhecidos passaram.</p>
+      </div>
+      <div class="container_embreve_quarto">
+        <img class="container_embreve_filme" src="Imagem/filme11.webp" alt="Filme1">
+        <h1 class="container_embreve_divertida">Divertida Mente 2</h1>
+        <h2 class="container_embreve_divertidasinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #006400;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">L</strong>
+        </span>
+        <p class="container_embreve_divertidatexto">
+          Divertida Mente 2: Com a mudança para uma nova cidade, as emoções de Riley, que tem apenas 11 anos
+          de idade, ficam extremamente agitadas. Uma confusão na sala de controle do seu cérebro deixa a
+          Alegria e a Tristeza de fora, afetando a vida de Riley radicalmente.</p>
+      </div>
+      <div class="container_embreve_quinto">
+        <img class="container_embreve_filme" src="Imagem/filme9.webp" alt="Filme1">
+        <h1 class="container_embreve_planeta">Planeta dos Macacos: O Reinado</h1>
+        <h2 class="container_embreve_planetasinopse">Sinopse</h2>
+        <span class="fa-stack fa-lg" style="align-self: self-end;">
+          <i class="fas fa-square fa-stack-2x" style="border-radius: 50%; color: #006400;"></i>
+          <strong class="fa-stack-1x fa-inverse" style="color: white;">L</strong>
+        </span>
+        <p class="container_embreve_planetatexto">
+          Kung Fu Panda 4: Dessa vez, o Dragão Guerreiro foi convocado para dar sequência em sua jornada e assim
+          tornar-se
+          o Líder Espiritual do Vale da Paz. Para que isso aconteça, porém, ele precisa encontrar e treinar
+          alguém para ficar em seu lugar. Para deixar o amado urso ainda mais enlouquecido, tem vilão novo
+          e poderoso no pedaço.</p>
+      </div>
+    </div>
+  </div>
+  <div id="container_desconto" class="container_desconto">
+    <div class="container_desconto_menu">
+      <h1 class="container_desconto_titulo">Desconto</h1>
+    </div>
+    <div class="container_desconto_topicos">
+      <div class="container_desconto_item">
+        <i class="fa-solid fa-person-pregnant container_desconto_icon"></i>
+        <span class="container_desconto_gestante">Gestante</span>
+        <h1 class="container_desconto_texto">Gestante paga apenas meia entrada!</h1>
+      </div>
+      <div class="container_desconto_item">
+        <i class="fas fa-graduation-cap container_desconto_icon"></i>
+        <span class="container_desconto_estudante">Estudante</span>
+        <h1 class="container_desconto_texto">Estudante paga apenas meia entrada! *Comprovando com atestado de matricula*
+        </h1>
+      </div>
+      <div class="container_desconto_item">
+        <i class="fas fa-wheelchair container_desconto_icon"></i>
+        <span class="container_desconto_deficiente">Deficiente Físico</span>
+        <h1 class="container_desconto_texto">Deficiente Fisico paga apenas meia entrada!</h1>
+      </div>
+    </div>
+  </div>
+  <div id="container_contato" class="container_contato">
+    <div class="container_contato_titulo">
+      <h1>Contato</h1>
+    </div>
+    <div class="container_contato_redes">
+      <div class="container_contato_redessociais">
+        <h1 class="container_contato_nome">Redes Sociais</h1>
+        <div class="container_contato_nomeredes">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-threads"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+      <div class="container_contato_localizacao">
+        <div class="container_contato_titulolocalizacao">
+          <h1 class="container_contato_textolocalizacao">Localização</h1>
+        </div>
+        <div class="container_contato_texto">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="container_contato_localendereco">
+            <h1 class="container_contato_local">Iguatemi Porto Alegre Shopping Center</h1>
+            <h2 class="container_contato_endereço">Av. João Wallig, 1800 - Passo d'Areia, Porto Alegre - RS, 91349-900
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container_contato_email">
+        <h1 class="container_contato-tituloemail">Email / Telefone</h1>
+        <div class="container_contato_textoemail">
+          <i class="fas fa-envelope"></i>
+          <h1 class="container_contato_emailendereco">contato@cinemaproduction.com</h1>
+        </div>
+        <div class="container_contato_textoemail">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h1 class="container_contato_emailendereco">(51) 9.####-####</h1>
+        </div>
+        <div class="container_contato_textoemail">
+          <i class="fa-solid fa-phone"></i>
+          <h1 class="container_contato_emailendereco">(51) 3289-####</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
